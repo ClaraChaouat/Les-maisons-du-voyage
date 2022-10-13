@@ -1,0 +1,85 @@
+@import "../styles/settings.scss";
+@import "../styles/responsive.scss";
+
+.paymentFormTitle {
+  display: flex;
+  font-family: $primaryFontFamily;
+  font-size: 30px;
+  font-weight: 800;
+  justify-content: center;
+  width: 100%;
+  padding-top: 55px;
+}
+
+.paymentForm {
+  background-color: $formBackgroundColor;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.totalAmountContainer {
+  padding-top: 80px;
+  margin-bottom: 15px;
+  color: #d98471;
+  font-family: $secondaryFontFamily;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.totalAmountCard {
+  border-radius: 5px;
+  padding: 20px 0;
+}
+
+input {
+  border-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.totalAmountInput {
+  font-size: 23px;
+  font-family: $primaryFontFamily;
+}
+
+.paymentMethodsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+  padding-bottom: 300px;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  margin: 0 5px
+}
+
+.paymentMethods {
+  font-size: 18px;
+  font-family: $primaryFontFamily;
+  font-weight: 600;
+}
+
+.paymentMethodsInput {
+  font-size: 18px;
+}
+
+.paymentMethodinputError {
+  margin-top: 10px;
+  font-size: 13px;
+  color: red;
+  font-weight: 500;
+}
+
+@media #{$medium-screen} {
+  .paymentMethodContainer {
+    flex-direction: column;
+  }
+
+  .totalAmountInput {
+    font-size: 16px;
+  }
+}
+
+
